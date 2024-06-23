@@ -35,7 +35,6 @@ btns.forEach(btn => {
 
 function calculate() {
     try {
-        // Evaluate the expression safely
         result.value = eval(result.value);
     } catch (error) {
         alert("Invalid input for evaluation");
