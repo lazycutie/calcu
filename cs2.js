@@ -114,8 +114,8 @@ function exp() {
     }
 }
 
-function facto() {
-    let num =  (result.value);
+ function facto() {
+    let num = Number(result.value); // Convert to number
     if (Number.isInteger(num) && num >= 0) {
         let f = 1;
         for (let i = 1; i <= num; i++) {
@@ -126,3 +126,4 @@ function facto() {
         alert("Invalid input for factorial");
     }
 }
+
