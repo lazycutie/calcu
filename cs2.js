@@ -45,8 +45,13 @@ function allClear() {
     result.value = "";
 }
 
-function delLastChar() {
-    result.value = result.value.slice(0, -1);
+ function delLastChar() {
+    if ( result.value="infinity") {
+        delLastChar=allClear
+    } else {
+       result.value = result.value.slice(0, -1); 
+    }
+    
 }
 
 function power() {
